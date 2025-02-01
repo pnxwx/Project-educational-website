@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สื่อการสอนออนไลน์</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .lesson-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .lesson-category {
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative; /* เพิ่ม property นี้ */
+            overflow: hidden; /* ป้องกัน lock icon ล้นออกมา */
+        }
+
+        .lesson-category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .lesson-category a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .lesson-lock {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* สีดำโปร่งแสง */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            cursor: default;
+        }
+
+        /* ปรับแต่งเพิ่มเติม */
+        .lesson-category h2 {
+            color: #007bff;
+        }
+
+        .lesson-category p {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>สื่อการสอนออนไลน์</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="welcome-message">
+            <h1>ยินดีต้อนรับสู่สื่อการสอนออนไลน์</h1>
+            <p>เรียนรู้เนื้อหาและทดสอบความรู้ของคุณ</p>
+        </section>
+
+        <section class="lesson-categories">
+            <div class="lesson-category" id="lesson1">
+                <a href="lesson1.html">
+                    <h2>บทที่ 1</h2>
+                </a>
+                <p>เนื้อหาบทที่ 1</p>
+            </div>
+            <div class="lesson-category lesson-locked" id="lesson2">
+                <a href="#">
+                    <h2>บทที่ 2</h2>
+                </a>
+                <p>เนื้อหาบทที่ 2</p>
+                <div class="lesson-lock">ต้องเรียนบทที่ 1 ก่อน</div>
+            </div>
+            <div class="lesson-category lesson-locked" id="lesson3">
+                <a href="#">
+                    <h2>บทที่ 3</h2>
+                </a>
+                <p>เนื้อหาบทที่ 3</p>
+                <div class="lesson-lock">ต้องเรียนบทที่ 2 ก่อน</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // ตรวจสอบว่าผู้ใช้เรียนบทที่ 1 แล้วหรือยัง (ในที่นี้ใช้ localStorage)
+        const lesson1Completed = localStorage.getItem('lesson1Completed');
+
+        if (lesson1Completed) {
+            // ถ้าเรียนแล้ว เอา class lesson-locked ออกจากบทที่ 2
+            document.getElementById('lesson2').classList.remove('lesson-locked');
+        }
+
+        // (คล้ายกันสำหรับบทที่ 3)
+        const lesson2Completed = localStorage.getItem('lesson2Completed');
+        if (lesson2Completed) {
+            document.getElementById('lesson3').classList.remove('lesson-locked');
+        }
+
+
+        // เมื่อผู้ใช้เรียนจบบทที่ 1:
+        // สมมติว่ามีปุ่มหรือเหตุการณ์ที่ผู้ใช้คลิกเมื่อเรียนจบ
+        // document.getElementById('finishLesson1Button').addEventListener('click', () => {
+        //     localStorage.setItem('lesson1Completed', 'true');
+        //     document.getElementById('lesson2').classList.remove('lesson-locked');
+        // });
+
+        // (ทำนองเดียวกันสำหรับบทอื่นๆ)
+    </script>
+
+</body>
+
+</html>

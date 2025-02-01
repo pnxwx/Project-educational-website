@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .quiz-container {
+            margin-bottom: 2rem;
+        }
+
+        .question {
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ปรับแต่งเพิ่มเติม */
+        .question h2 {
+            color: #333;
+        }
+
+        .options label:hover {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .lesson-navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lesson-navigation a {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>แบบทดสอบ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="quiz-container">
+            <div class="question">
+                <h2>คำถามที่ 1: ข้อมูลส่วนตัวคืออะไร?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A) ข้อมูลที่ใช้ในการทำธุรกรรมทางการเงิน</label>
+                    <label><input type="radio" name="q1" value="b"> B) ข้อมูลที่เกี่ยวข้องกับชีวิตส่วนตัว เช่น ชื่อ ที่อยู่ และหมายเลขโทรศัพท์</label>
+                    <label><input type="radio" name="q1" value="c"> C) ข้อมูลที่สามารถใช้ในการสร้างบัญชีโซเชียลมีเดีย</label>
+                    <label><input type="radio" name="q1" value="d"> D) ข้อมูลที่ใช้ในการกรอกแบบสอบถาม</label>
+                </div>
+            </div>
+                <h2>คำถามที่ 2: ข้อมูลส่วนตัวสามารถนำไปใช้ในวัตถุประสงค์ใดบ้าง?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A) การติดต่อสื่อสารส่วนตัว</label>
+                    <label><input type="radio" name="q2" value="b"> B) การทำธุรกรรมทางการเงินและการลงทะเบียน</label>
+                    <label><input type="radio" name="q2" value="c"> C) การโฆษณาและการตลาด</label>
+                    <label><input type="radio" name="q2" value="d"> D) ทุกข้อที่กล่าวมา</label>
+                
+        <h2>คำถามที่ 3: Phishing คืออะไร?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> A) การส่งข้อมูลส่วนตัวของตัวเองให้กับเว็บไซต์ที่ไม่น่าเชื่อถือ</label>
+                    <label><input type="radio" name="q3" value="b"> B) การเข้ารหัสข้อมูลเพื่อป้องกันการถูกขโมย</label>
+                    <label><input type="radio" name="q3" value="c"> C) การส่งข้อความเพื่อหลอกลวงและขโมยข้อมูลสำคัญ เช่น รหัสผ่านและข้อมูลทางการเงิน</label>
+                    <label><input type="radio" name="q3" value="d"> D) การโพสต์ข้อมูลส่วนตัวในโซเชียลมีเดีย</label>
+                </div>
+            <div class="question">
+                    <h2>คำถามที่ 4: หากคุณได้รับอีเมลจากแหล่งที่ไม่รู้จักและขอข้อมูลส่วนตัว เช่น ชื่อผู้ใช้และรหัสผ่าน ควรทำอย่างไร?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> A) กรอกรหัสผ่านและข้อมูลส่วนตัวตามที่ขอ</label>
+                        <label><input type="radio" name="q4" value="b"> B) กดลิงก์ในอีเมลและทำตามคำแนะนำ</label>
+                        <label><input type="radio" name="q4" value="c"> C) ลบอีเมลนั้นและไม่ให้ข้อมูลส่วนตัว</label>
+                        <label><input type="radio" name="q4" value="d"> D) ส่งอีเมลตอบกลับเพื่อขอคำชี้แจง</label>
+                    </div>
+            <div class="question">
+                    <h2>คำถามที่ 5: การแอบอ้างหมายถึงอะไร?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> A) การใช้ข้อมูลจริงเพื่อโปรโมตสินค้า</label>
+                        <label><input type="radio" name="q5" value="b"> B) การปลอมแปลงตัวตนของบุคคลหรือองค์กรเพื่อหลอกลวงผู้อื่น</label>
+                        <label><input type="radio" name="q5" value="c"> C) การตั้งรหัสผ่านที่ปลอดภัยเพื่อป้องกันการโจรกรรม</label>
+                        <label><input type="radio" name="q5" value="d"> D) การใช้ข้อมูลส่วนตัวในการสมัครบัญชีโซเชียลมีเดีย</label>
+                    </div>  
+                    <div class="question">
+                        <h2>คำถามที่ 6: การระวังภัยจากการแอบอ้างในโซเชียลมีเดียควรทำอย่างไร?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="a"> A) แชร์ข้อมูลส่วนตัวให้กับทุกคนที่ส่งคำขอ</label>
+                            <label><input type="radio" name="q6" value="b"> B) ตอบข้อความที่มีลิงก์ไปยังเว็บไซต์ที่ไม่น่าเชื่อถือ</label>
+                            <label><input type="radio" name="q6" value="c"> C) ตรวจสอบแหล่งที่มาของข้อความและไม่ให้ข้อมูลส่วนตัว</label>
+                            <label><input type="radio" name="q6" value="d"> D) ใช้รหัสผ่านง่ายๆ เพื่อหลีกเลี่ยงการลืม</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 7: หากมีบุคคลที่ไม่รู้จักขอข้อมูลส่วนตัว เช่น รหัสผ่าน หรือข้อมูลบัตรเครดิตผ่านช่องทางออนไลน์ คุณควรทำอย่างไร?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="a"> A) ให้ข้อมูลทั้งหมดเพื่อหลีกเลี่ยงการถูกข่มขู่</label>
+                            <label><input type="radio" name="q7" value="b"> B) ถามหาคำอธิบายจากบุคคลนั้นก่อนให้ข้อมูล</label>
+                            <label><input type="radio" name="q7" value="c"> C) ปฏิเสธการให้ข้อมูลและรายงานการขอข้อมูลนั้นไปยังผู้ให้บริการ</label>
+                            <label><input type="radio" name="q7" value="d"> D) ยืนยันว่าคุณจะให้ข้อมูลเมื่อบุคคลนั้นสามารถให้เหตุผลที่ดี</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 8: ข้อใดเป็นวิธีการตั้งค่าความเป็นส่วนตัวบนโซเชียลมีเดีย?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="a"> A) แชร์ข้อมูลส่วนตัวให้ทุกคนเห็น</label>
+                            <label><input type="radio" name="q8" value="b"> B) ตั้งค่าบัญชีเป็น "ส่วนตัว" (Private Account)</label>
+                            <label><input type="radio" name="q8" value="c"> C) รับคำขอเป็นเพื่อนจากทุกคน</label>
+                            <label><input type="radio" name="q8" value="d"> D) ใช้รหัสผ่านที่ง่ายต่อการเดา</label>
+                        </div>
+                    <div class="question">
+                            <h2>คำถามที่ 9: การป้องกันข้อมูลส่วนตัวในโซเชียลมีเดียสำคัญอย่างไร? </h2>
+                            <div class="options">
+                                <label><input type="radio" name="q9" value="a"> A) เพื่อให้เพื่อนและครอบครัวสามารถเข้าถึงข้อมูลได้</label>
+                                <label><input type="radio" name="q9" value="b"> B) เพื่อป้องกันการถูกโจรกรรมข้อมูลและการใช้ข้อมูลโดยมิชอบ</label>
+                                <label><input type="radio" name="q9" value="c"> C) เพื่อเผยแพร่ข้อมูลให้คนทั่วไปเห็น</label>
+                                <label><input type="radio" name="q9" value="d"> D) เพื่อแชร์ข้อมูลในทุกแพลตฟอร์มได้</label>
+                            </div>
+                    <div class="question">
+                            <h2>คำถามที่ 10: การเปิดใช้งานการยืนยันตัวตนแบบสองชั้น (Two-Factor Authentication) ช่วยเพิ่มความปลอดภัยได้อย่างไร?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q10" value="a"> A) ส่งข้อความยืนยันไปยังอีเมลหรือโทรศัพท์เมื่อเข้าสู่ระบบ</label>
+                                <label><input type="radio" name="q10" value="b"> B) ทำให้รหัสผ่านยากขึ้น</label>
+                                <label><input type="radio" name="q10" value="c"> C) เปิดการเข้าถึงข้อมูลส่วนตัว</label>
+                                <label><input type="radio" name="q10" value="d"> D) แชร์รหัสผ่านกับผู้อื่น</label>
+                            </div>  
+                    </div>                
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button onclick="checkAnswers()">ตรวจคำตอบ</button>
+        </div>
+
+        <div id="result" style="margin-top: 20px;"></div>
+        <section class="lesson-navigation">
+            <a href="index.html">ย้อนกลับ</a>
+            <a href="lesson3.html">ถัดไป</a>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'b',
+                q2: 'd',
+                q3: 'd',
+                q4: 'c',
+                q5: 'b',
+                q6: 'c',
+                q7: 'd',
+                q8: 'b',
+                q9: 'b',
+                q10: 'a',
+            };
+            let score = 0;
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            if (score === 3) {
+        resultDiv.innerHTML = `<span style="color: green; font-size: 1.2rem;">คุณทำได้ยอดเยี่ยม! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="เยี่ยม" width="20">`; // เพิ่ม Emoji
+            } else if (score === 2) {
+         resultDiv.innerHTML = `<span style="color: orange; font-size: 1.2rem;">คุณทำได้ดีมาก! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/190/190190.png" alt="ดี" width="20">`; // เพิ่ม Emoji
+            } else if (score === 1) {
+        resultDiv.innerHTML = `<span style="color: blue; font-size: 1.2rem;">คุณทำได้ดี! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/4226/4226988.png" alt="ปานกลาง" width="20">`; // เพิ่ม Emoji
+            } else {
+    resultDiv.innerHTML = `<span style="color: red; font-size: 1.2rem;">พยายามอีกครั้ง! คุณได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/1828/1828811.png" alt="ไม่ดี" width="20">`; // เพิ่ม Emoji
+        }
+        }
+        
+    </script>
+</body>
+
+</html>

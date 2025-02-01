@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .quiz-container {
+            margin-bottom: 2rem;
+        }
+
+        .question {
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ปรับแต่งเพิ่มเติม */
+        .question h2 {
+            color: #333;
+        }
+
+        .options label:hover {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .lesson-navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lesson-navigation a {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>แบบทดสอบ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="quiz-container">
+            <div class="question">
+                <h2>คำถามที่ 1: กฎหมายใดที่ใช้ควบคุมการใช้โซเชียลมีเดียในประเทศไทยเพื่อปกป้องข้อมูลส่วนตัวของประชาชน?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A) พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</label>
+                    <label><input type="radio" name="q1" value="b"> B) พ.ร.บ. การสื่อสารทางไกล พ.ศ. 2544</label>
+                    <label><input type="radio" name="q1" value="c"> C) พ.ร.บ. การโฆษณาผ่านสื่อดิจิทัล พ.ศ. 2558</label>
+                    <label><input type="radio" name="q1" value="d"> D) พ.ร.บ. ป้องกันการฉ้อโกง พ.ศ. 2542</label>
+                </div>
+            </div>
+                <h2>คำถามที่ 2: การโพสต์ข้อความที่ทำให้ผู้อื่นเสียหายบนโซเชียลมีเดียอาจเข้าข่ายความผิดตามกฎหมายใด?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A) พ.ร.บ. คอมพิวเตอร์ พ.ศ. 2550</label>
+                    <label><input type="radio" name="q2" value="b"> B) พ.ร.บ. ลิขสิทธิ์ พ.ศ. 2537</label>
+                    <label><input type="radio" name="q2" value="c"> C) พ.ร.บ. การคุ้มครองผู้บริโภค พ.ศ. 2522</label>
+                    <label><input type="radio" name="q2" value="d"> D) พ.ร.บ. สื่อมวลชน พ.ศ. 2543</label>
+                
+            <h2>คำถามที่ 3: การโพสต์ข้อมูลส่วนตัวของผู้อื่นโดยไม่ได้รับอนุญาต ถือเป็นการกระทำที่ผิดจริยธรรมหรือไม่?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A) ใช่</label>
+                    <label><input type="radio" name="q2" value="b"> B) ไม่ใช่</label>
+                    <label><input type="radio" name="q2" value="c"> C) ขึ้นอยูากับสถานการณ์</label>
+                    <label><input type="radio" name="q2" value="d"> D) ไม่เกี่ยวข้องกับจริยธรรม</label>
+                </div>
+            <div class="question">
+                    <h2>คำถามที่ 4: การแชร์รูปภาพหรือวีดีโอของผู้อื่นโดยไม่ได้รับอนุญาตในโซเชียลมีเดีย ถือเป็นการละเมิดสิทธิอะไร?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> A) สิทธิในการเข้าถึงข้อมูล</label>
+                        <label><input type="radio" name="q4" value="b"> B) สิทธิในการแสดงความคิดเห็น</label>
+                        <label><input type="radio" name="q4" value="c"> C) สิทธิในการรักษาความเป็นส่วนตัว</label>
+                        <label><input type="radio" name="q4" value="d"> D) สิทธิในการพูดคุย</label>
+                    </div>
+            <div class="question">
+                    <h2>คำถามที่ 5: วิธีใดที่ช่วยในการจัดการเวลาการใช้โซเชียลมีเดียได้อย่างมีประสิทธิภาพ? </h2>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> A) การตั้งเวลาสำหรับการใช้งานโซเชียลมีเดีย</label>
+                        <label><input type="radio" name="q5" value="b"> B) การติดตามการใช้งานโซเชียลมีเดีย</label>
+                        <label><input type="radio" name="q5" value="c"> C) การหาสิ่งอื่นๆ ที่ทำให้มีเวลาห่างจากโซเชียลมีเดีย</label>
+                        <label><input type="radio" name="q5" value="d"> D) ทุกข้อที่กล่าวมาข้างต้น</label>
+                    </div>  
+                    <div class="question">
+                        <h2>คำถามที่ 6: การใช้โซเชียลมีเดียมากเกินไปสามารถส่งผลกระทบต่อสุขภาพจิตได้อย่างไร? </h2>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="a"> A) อาจทำให้เกิดความเครียดและความวิตกกังวล</label>
+                            <label><input type="radio" name="q6" value="b"> B) ทำให้รู้สึกมีความสุขมากขึ้น</label>
+                            <label><input type="radio" name="q6" value="c"> C) ช่วยลดความเครียด</label>
+                            <label><input type="radio" name="q6" value="d"> D) ไม่มีผลกระทบใดๆ</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 7: หากคุณพบว่ามีการข่มขู่หรือกลั่นแกล้งออนไลน์จากบุคคลอื่น ควรทำอย่างไร?  </h2>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="a"> A) ตอบโต้และทำการข่มขู่กลับ</label>
+                            <label><input type="radio" name="q7" value="b"> B) บันทึกหลักฐานและรายงานไปยังผู้ดูแลหรือเจ้าหน้าที่ที่เกี่ยวข้อง</label>
+                            <label><input type="radio" name="q7" value="c"> C) ปิดบัญชีโซเชียลมีเดียทันที</label>
+                            <label><input type="radio" name="q7" value="d"> D) เพิกเฉยและไม่ตอบสนอง</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 8: ถ้าคุณเป็นเหยื่อของการกลั่นแกล้งออนไลน์ ควรหลีกเลี่ยงการทำอย่างไร?  </h2>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="a"> A) พูดคุยกับผู้ที่กลั่นแกล้งและพยายามแก้ไขปัญหาด้วยการเจรจา</label>
+                            <label><input type="radio" name="q8" value="b"> B) โพสต์การตอบโต้กลับด้วยการกล่าวหาหรือข่มขู่กลับ</label>
+                            <label><input type="radio" name="q8" value="c"> C) การบล็อกหรือยกเลิกการติดตามผู้ที่กลั่นแกล้ง</label>
+                            <label><input type="radio" name="q8" value="d"> D) เงียบและไม่ทำอะไรเลย</label>
+                        </div>
+                    <div class="question">
+                            <h2>คำถามที่ 9: วิธีที่ดีที่สุดในการรับมือกับข่าวปลอมคืออะไร?   </h2>
+                            <div class="options">
+                                <label><input type="radio" name="q9" value="a"> A) แชร์ข่าวที่ได้รับจากเพื่อน</label>
+                                <label><input type="radio" name="q9" value="b"> B) ไม่ทำอะไรเลย</label>
+                                <label><input type="radio" name="q9" value="c"> C) แชร์ข่าวให้กับผู้อื่นโดยไม่ตรวจสอบ</label>
+                                <label><input type="radio" name="q9" value="d"> D) ตรวจสอบแหล่งที่มาของข่าวจากแหล่งที่เชื่อถือได้</label>
+                            </div>
+                    <div class="question">
+                            <h2>คำถามที่ 10: ข่าวปลอมอาจมีผลกระทบต่อสังคมได้อย่างไร?  </h2>
+                            <div class="options">
+                                <label><input type="radio" name="q10" value="a"> A) ทำให้เกิดความเข้าใจผิดและตัดสินใจที่ผิด</label>
+                                <label><input type="radio" name="q10" value="b"> B) ทำให้การสื่อสารระหว่างคนในสังคมเป็นไปได้ดีขึ้น</label>
+                                <label><input type="radio" name="q10" value="c"> C) ช่วยเพิ่มความน่าเชื่อถือให้กับข้อมูล</label>
+                                <label><input type="radio" name="q10" value="d"> D) ไม่มีผลกระทบต่อสังคม</label>
+                            </div>  
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button onclick="checkAnswers()">ตรวจคำตอบ</button>
+        </div>
+
+        <div id="result" style="margin-top: 20px;"></div>
+        <section class="lesson-navigation">
+            <a href="index.html">ย้อนกลับ</a>
+            <a href="end.html">ถัดไป</a>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'a',
+                q2: 'a',
+                q3: 'a',
+                q4: 'c',
+                q5: 'd',
+                q6: 'a',
+                q7: 'b',
+                q8: 'b',
+                q9: 'c',
+                q10: 'a',
+            };
+            let score = 0;
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            if (score === 3) {
+        resultDiv.innerHTML = `<span style="color: green; font-size: 1.2rem;">คุณทำได้ยอดเยี่ยม! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="เยี่ยม" width="20">`; // เพิ่ม Emoji
+            } else if (score === 2) {
+         resultDiv.innerHTML = `<span style="color: orange; font-size: 1.2rem;">คุณทำได้ดีมาก! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/190/190190.png" alt="ดี" width="20">`; // เพิ่ม Emoji
+            } else if (score === 1) {
+        resultDiv.innerHTML = `<span style="color: blue; font-size: 1.2rem;">คุณทำได้ดี! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/4226/4226988.png" alt="ปานกลาง" width="20">`; // เพิ่ม Emoji
+            } else {
+    resultDiv.innerHTML = `<span style="color: red; font-size: 1.2rem;">พยายามอีกครั้ง! คุณได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/1828/1828811.png" alt="ไม่ดี" width="20">`; // เพิ่ม Emoji
+        }
+        }
+    </script>
+
+</body>
+
+</html>

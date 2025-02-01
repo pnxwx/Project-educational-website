@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .quiz-container {
+            margin-bottom: 2rem;
+        }
+
+        .question {
+            margin-bottom: 1rem;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ปรับแต่งเพิ่มเติม */
+        .question h2 {
+            color: #333;
+        }
+
+        .options label:hover {
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .lesson-navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lesson-navigation a {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>แบบทดสอบ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="quiz-container">
+            <div class="question">
+                <h2>คำถามที่ 1: โซเชียลมีเดียมีบทบาทสำคัญต่อการเชื่อมโยงผู้คนทั่วโลกเพราะเหตุใด?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A) ทำให้สามารถสื่อสารได้แบบเรียลไทม์แม้จะอยู่ต่างประเทศ</label>
+                    <label><input type="radio" name="q1" value="b"> B) เพิ่มความเป็นส่วนตัวในชีวิตประจำวัน</label>
+                    <label><input type="radio" name="q1" value="c"> C) ลดการใช้เทคโนโลยี</label>
+                    <label><input type="radio" name="q1" value="d"> D) ส่งผลต่อเศรษฐกิจเท่านั้น</label>
+                </div>
+            </div>
+                <h2>คำถามที่ 2: โซเชียลมีเดียมีผลกระทบเชิงบวกต่อเศรษฐกิจอย่างไร?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A) เป็นช่องทางให้ผู้ประกอบการโปรโมตสินค้าและบริการ</label>
+                    <label><input type="radio" name="q2" value="b"> B) ทำให้ผู้คนไม่ต้องใช้เงินสด</label>
+                    <label><input type="radio" name="q2" value="c"> C) ช่วยลดการทำงานของระบบธนาคาร</label>
+                    <label><input type="radio" name="q2" value="d"> D) ทำให้คนซื้อสินค้าน้อยลง</label>
+                
+        <h2>คำถามที่ 3: ข้อใดแสดงถึงการใช้โซเชียลมีเดียในด้านการศึกษา?</h2>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> A) การดูภาพยนตร์ออนไลน์</label>
+                    <label><input type="radio" name="q3" value="b"> B) การเข้าร่วมชั้นเรียนผ่านแพลตฟอร์มการศึกษาออนไลน์</label>
+                    <label><input type="radio" name="q3" value="c"> C) การติดตามข่าวดารา</label>
+                    <label><input type="radio" name="q3" value="d"> D) การเล่นเกมออนไลน์</label>
+                </div>
+            <div class="question">
+                    <h2>คำถามที่ 4: ข้อใดเป็นวิธีป้องกันการตกเป็นเหยื่อของการหลอกลวงบนโซเชียลมีเดีย?</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> A) ยอมรับคำขอเป็นเพื่อนจากทุกคน</label>
+                        <label><input type="radio" name="q4" value="b"> B) แชร์ข้อมูลส่วนตัวให้มากที่สุด</label>
+                        <label><input type="radio" name="q4" value="c"> C) ตรวจสอบความน่าเชื่อถือของข้อมูลก่อนแชร์</label>
+                        <label><input type="radio" name="q4" value="d"> D) ใช้รหัสผ่านที่ง่ายต่อการจดจำ</label>
+                    </div>
+            <div class="question">
+                    <h2>คำถามที่ 5: วัตถุประสงค์ของการเรียนรู้วิธีการใช้โซเชียลมีเดียอย่างปลอดภัยคือข้อใด</h2>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> A) เพื่อความทันสมัยของตัวเอง</label>
+                        <label><input type="radio" name="q5" value="b"> B) เพื่อความสนุกสนาน</label>
+                        <label><input type="radio" name="q5" value="c"> C) เพื่อให้เรียนเก่งขึ้น</label>
+                        <label><input type="radio" name="q5" value="d"> D) เพื่อเพิ่มความตระหนักรู้เกี่ยวกับภัยคุกคามออนไลน์</label>
+                    </div>  
+                    <div class="question">
+                        <h2>คำถามที่ 6: โซเชียลมีเดีย (Social Media) หมายถึงอะไร?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q6" value="a"> A) เว็บไซต์หรือแอปพลิเคชันที่ช่วยให้ผู้คนสามารถสื่อสารและแลกเปลี่ยนข้อมูลในรูปแบบต่างๆได้</label>
+                            <label><input type="radio" name="q6" value="b"> B) เว็บไซต์สำหรับการค้นหาข้อมูลเท่านั้น</label>
+                            <label><input type="radio" name="q6" value="c"> C) โปรแกรมที่ใช้สำหรับการตัดต่อวิดีโอ</label>
+                            <label><input type="radio" name="q6" value="d"> D) เทคโนโลยีที่ใช้เฉพาะในองค์กรธุรกิจ</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 7: ข้อใดเป็นตัวอย่างของโซเชียลมีเดียประเภทแพลตฟอร์มเนื้อหา (Content Sharing)?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q7" value="a"> A) YouTube และ Pinterest</label>
+                            <label><input type="radio" name="q7" value="b"> B) Facebook และ Instagram</label>
+                            <label><input type="radio" name="q7" value="c"> C) LinkedIn และ Twitter</label>
+                            <label><input type="radio" name="q7" value="d"> D) WhatsApp และ Line</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>คำถามที่ 8: โซเชียลมีเดียสามารถช่วยในการเรียนรู้ได้อย่างไร?</h2>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="a"> A) ช่วยให้คนสามารถเข้าถึงข้อมูลและแหล่งความรู้ต่าง ๆ</label>
+                            <label><input type="radio" name="q8" value="b"> B) ช่วยให้ผู้คนแบ่งปันเกมใหม่ ๆ</label>
+                            <label><input type="radio" name="q8" value="c"> C) ช่วยให้เล่นเกมได้ง่ายขึ้น</label>
+                            <label><input type="radio" name="q8" value="d"> D) ช่วยลดเวลาในการเรียน</label>
+                        </div>
+                    <div class="question">
+                            <h2>คำถามที่ 9: ประเภทของโซเชียลมีเดียที่มุ่งเน้นการสร้างโปรไฟล์อาชีพและเชื่อมโยงกับเพื่อนร่วมงานในวงการอาชีพคืออะไร?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q9" value="a"> A) Facebook</label>
+                                <label><input type="radio" name="q9" value="b"> B) LinkedIn</label>
+                                <label><input type="radio" name="q9" value="c"> C) Instagram</label>
+                                <label><input type="radio" name="q9" value="d"> D) Twitter</label>
+                            </div>
+                    <div class="question">
+                            <h2>คำถามที่ 10: การใช้งานโซเชียลมีเดียในการทำงานสามารถช่วยเพิ่มประสิทธิภาพในด้านใด?</h2>
+                            <div class="options">
+                                <label><input type="radio" name="q10" value="a"> A) การสื่อสารและการทำงานร่วมกันของทีม</label>
+                                <label><input type="radio" name="q10" value="b"> B) การเพิ่มเวลาในการทำงาน</label>
+                                <label><input type="radio" name="q10" value="c"> C) การลดความเครียดในการทำงาน</label>
+                                <label><input type="radio" name="q10" value="d"> D) การทำงานโดยไม่ต้องพักผ่อน</label>
+                            </div>  
+                    </div>                
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button onclick="checkAnswers()">ตรวจคำตอบ</button>
+        </div>
+
+        <div id="result" style="margin-top: 20px;"></div>
+        <section class="lesson-navigation">
+            <a href="index.html">ย้อนกลับ</a>
+            <a href="lesson2.html">ถัดไป</a>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'b',
+                q2: 'a',
+                q3: 'b',
+                q4: 'c',
+                q5: 'd',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a',
+                q9: 'd',
+                q10: 'a',
+            };
+            let score = 0;
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            if (score === 3) {
+        resultDiv.innerHTML = `<span style="color: green; font-size: 1.2rem;">คุณทำได้ยอดเยี่ยม! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="เยี่ยม" width="20">`; // เพิ่ม Emoji
+            } else if (score === 2) {
+         resultDiv.innerHTML = `<span style="color: orange; font-size: 1.2rem;">คุณทำได้ดีมาก! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/190/190190.png" alt="ดี" width="20">`; // เพิ่ม Emoji
+            } else if (score === 1) {
+        resultDiv.innerHTML = `<span style="color: blue; font-size: 1.2rem;">คุณทำได้ดี! ได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/4226/4226988.png" alt="ปานกลาง" width="20">`; // เพิ่ม Emoji
+            } else {
+    resultDiv.innerHTML = `<span style="color: red; font-size: 1.2rem;">พยายามอีกครั้ง! คุณได้ ${score} คะแนน <img src="https://cdn-icons-png.flaticon.com/512/1828/1828811.png" alt="ไม่ดี" width="20">`; // เพิ่ม Emoji
+        }
+        }
+        
+    </script>
+</body>
+
+</html>
