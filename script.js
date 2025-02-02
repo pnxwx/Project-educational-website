@@ -1,8 +1,8 @@
 // โค้ดเปลี่ยนบทเรียน
 let lessons = [
-    { img: "images/lesson1.jpg", text: "บทเรียนที่ 1: ความรู้เบื้องต้น" },
-    { img: "images/lesson2.jpg", text: "บทเรียนที่ 2: ระบบสุริยะ" },
-    { img: "images/lesson3.jpg", text: "บทเรียนที่ 3: วัฏจักรของน้ำ" }
+    { img: "images/lesson1.jpg", text: "บทเรียนที่ 1: วัตถุประสงค์ของการเรียนรู้วิธีการปลอดภัย" },
+    { img: "images/lesson2.jpg", text: "บทเรียนที่ 2: วิธีป้องกันไม่ให้ข้อมูลรั่วไหล" },
+    { img: "images/lesson3.jpg", text: "บทเรียนที่ 3: ผลกระทบของการเล่นโซเชียลมีเดียมากเกินไป" }
 ];
 
 let currentLesson = 0;
@@ -49,3 +49,25 @@ document.getElementById('finishLesson1Button').addEventListener('click', () => {
             document.getElementById("module3").classList.remove("locked");
             document.getElementById("module3").querySelector(".lock-message").style.display = "none";
         }}
+        const lessonCategories = document.querySelectorAll('.lesson-category');
+
+lessonCategories.forEach(category => {
+  category.addEventListener('mouseover', () => {
+    category.style.backgroundColor = '#eee';
+  });
+
+  category.addEventListener('mouseout', () => {
+    category.style.backgroundColor = '#fff';
+  });
+});
+const lesson = document.querySelectorAll('.lesson-category');
+
+lessonCategories.forEach(category => {
+  category.addEventListener('mouseover', () => {
+    category.style.backgroundColor = '#eee';
+  });
+
+  category.addEventListener('mouseout', () => {
+    category.style.backgroundColor = '#fff';
+  });
+});

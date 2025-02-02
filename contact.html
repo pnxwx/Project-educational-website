@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บทเรียน</title>
+    <title>สื่อการสอนออนไลน์</title>
     <style>
         body {
             font-family: sans-serif;
@@ -55,32 +56,63 @@
             color: #007bff;
         }
 
-        .lesson-video {
+        .welcome-message {
             text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .lesson-video video {
-            max-width: 100%;
-        }
-
-        .lesson-details {
             margin-bottom: 2rem;
         }
 
-        .lesson-navigation {
+        .lesson-categories {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .lesson-navigation a {
-            background-color: #007bff;
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
+        .lesson-category {
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
             border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative; /* เพิ่ม property นี้ */
+            overflow: hidden; /* ป้องกัน lock icon ล้นออกมา */
         }
- /* สไตล์สำหรับรูปภาพที่ใส่*/
+
+        .lesson-category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .lesson-category a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .lesson-lock {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* สีดำโปร่งแสง */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            cursor: default;
+        }
+
+        /* ปรับแต่งเพิ่มเติม */
+        .lesson-category h2 {
+            color: #007bff;
+        }
+
+        .lesson-category p {
+            color: #666;
+        }
+/* สไตล์สำหรับรูปภาพที่ใส่*/
 div img {
     width: 100%;
     max-width: 600px;
@@ -114,41 +146,39 @@ div > div:first-child p {
   width: 70px; /* ปรับขนาดโลโก้ตามต้องการ */
 }
 
+footer p {
+    margin: 0 0 10px;
+}
+
+footer a {
+    color: #0078D7;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
 footer a:hover {
     text-decoration: underline;
-}
-/* สไตล์สำหรับรูปภาพที่ใส่*/
-div img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-div > div:first-child {
-    background-color: #0078D7; /* สีพื้นหลังน้ำเงิน */
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-div > div:first-child h2 {
-    margin: 0;
-    font-size: 1.8em;
-}
-
-div > div:first-child p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
 }
 body {
   display: grid;
   grid-template-rows: 1fr auto; /* แบ่งพื้นที่เป็น 2 ส่วน: 1 ส่วนสำหรับเนื้อหา, 1 ส่วนสำหรับ footer */
   min-height: 100vh; /* ทำให้ body สูงเต็มจอภาพ */
 }
+.contact-container {
+  display: flex;
+  flex-direction: column; /* จัดเรียงองค์ประกอบแนวตั้ง */
 
+}
+button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease; }
     </style>
 </head>
 <body>
@@ -166,21 +196,31 @@ body {
         </ul>   
     </nav>
     <main>
-        <div class="lesson">
-            <h3>บทเรียนที่ 2</h3>
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/f1Y4GS58ZVo?si=_NbUilU23y8Ju8s_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-
-        <section class="lesson-details">
-            <h1>บทที่ 2</h1>
-            <p>วิธีป้องกันไม่ให้ข้อมูลรั่วไหล</p>
+        <section class="contact-form">
+            <h2>ส่งข้อความถึงเรา</h2>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">ชื่อ:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">ข้อความ:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">ส่งข้อความ</button>
+            </form>
         </section>
 
-        <section class="lesson-navigation">
-            <a href="index.html">ย้อนกลับ</a>
-            <a href="quiz2.html">ถัดไป</a>
+        <section class="contact-info">
+            <h2>ข้อมูลติดต่อ</h2>
+            <p>อีเมล: 65209010024@htc.ac.th</p>
+            <p>อีเมล: 65209010028@htc.ac.th</p>
+            <p>อีเมล: 65209010039@htc.ac.th</p>
+            <p>โทร: 0617156954</p>
         </section>
     </main>
     <footer style="margin-top: 40px; background-color: #333; color: white; padding: 20px; border-radius: 5px; text-align: center;">

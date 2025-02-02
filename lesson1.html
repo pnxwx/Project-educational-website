@@ -14,12 +14,11 @@
         }
 
         header {
-            background-color: #007bff;
+            background-color: #a9d3ff;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
-
         nav {
             background-color: #333;
             color: white;
@@ -80,21 +79,120 @@
             text-decoration: none;
             border-radius: 5px;
         }
+/* สไตล์สำหรับรูปภาพที่ใส่*/
+div img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+div > div:first-child {
+    background-color: #0078D7; /* สีพื้นหลังน้ำเงิน */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+div > div:first-child h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+div > div:first-child p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+.logo {
+  margin-right: 20px; /* เพิ่มระยะห่างระหว่างโลโก้และชื่อเว็บไซต์ */
+}
+
+.logo img {
+  width: 70px; /* ปรับขนาดโลโก้ตามต้องการ */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* สไตล์สำหรับรูปภาพที่ใส่*/
+div img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+div > div:first-child {
+    background-color: #0078D7; /* สีพื้นหลังน้ำเงิน */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+div > div:first-child h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+div > div:first-child p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* สไตล์สำหรับรูปภาพที่ใส่*/
+div img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+div > div:first-child {
+    background-color: #0078D7; /* สีพื้นหลังน้ำเงิน */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+div > div:first-child h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+div > div:first-child p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr auto; /* แบ่งพื้นที่เป็น 2 ส่วน: 1 ส่วนสำหรับเนื้อหา, 1 ส่วนสำหรับ footer */
+  min-height: 100vh; /* ทำให้ body สูงเต็มจอภาพ */
+}
+
     </style>
 </head>
 <body>
-
     <header>
-        <h1>บทเรียน</h1>
+        <div class="logo">
+            <img src="d:\Project\รูป\Project.png" alt="โลโก้เว็บไซต์">
+        
+        <h1>การใช้โซเชียลมีเดียอย่างปลอดภัยและมีประสิทธิภาพ</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="#">ติดต่อเรา</a></li>
-        </ul>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>   
     </nav>
-
     <main>
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/liloM6e6Pq0?si=7ZptY6sNIiPis4oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -111,5 +209,12 @@
             <a href="quiz1.html">ถัดไป</a>
 </section>  
     </main>
+    <footer style="margin-top: 40px; background-color: #333; color: white; padding: 20px; border-radius: 5px; text-align: center;">
+        <p>&copy; 2025 สื่อการสอนออนไลน์ | ติดต่อ: 65209010028@htc.ac.th</p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/phattarawan.877343/" target="_blank" style="color: white; margin: 0 10px;">Facebook</a> |
+            <a href="https://www.instagram.com/chaxmqz._/" target="_blank" style="color: white; margin: 0 10px;">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
